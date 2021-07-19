@@ -21,5 +21,4 @@ public class PacchettoDto {
 	private int id;
 	private String titolo;
 	private int tappa;
-	private TappaDao tappaOBJ;
 }

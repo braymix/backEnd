@@ -15,6 +15,7 @@ import lombok.Data;
 @Table(name = "Viaggio")
 @Data
 public class ViaggioDao {
+	/*questa classe rappresenta il viaggio*/
 	@Id
 	@Column(name = "Id")
 	private int id;

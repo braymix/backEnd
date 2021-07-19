@@ -18,7 +18,8 @@ public class TappaServicesImpl implements TappaI {
 
 	@Autowired
 	public TappaRepository tappaRepository;
-	
+	/*questa funzione fa in modo che dato un id di un determinato viaggio mi ritorni tutte le tappe di quel viaggio 
+	 * in ordine sempre crescente per data della tappa*/
 	@Override
 	public List<TappaDto> getTappaByIdViaggio(int idViaggio) {
 		List<TappaDto> list = new ArrayList<>();

@@ -20,7 +20,7 @@ public class ViaggioServicesImpl implements ViaggioI {
 
 	@Autowired
 	private ViaggioRepository viaggioRepository;
-	
+	/*questa funzione ritorna semplicemente tutti i viaggi in ordine sempre crescente*/
 	@Override
 	public List<ViaggioDto> findAll() {
 		List<ViaggioDto> list = new ArrayList<>();

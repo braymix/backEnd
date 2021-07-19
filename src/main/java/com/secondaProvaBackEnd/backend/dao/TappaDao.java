@@ -17,7 +17,7 @@ import lombok.Data;
 @Table(name = "Tappa")
 @Data
 public class TappaDao {
-
+/*questa classe possiede tutti i dati di una tappa, più tappe formano un viaggio*/
 	@Id
 	@Column(name = "Id")
 	private int id;

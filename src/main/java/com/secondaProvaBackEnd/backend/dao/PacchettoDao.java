@@ -15,7 +15,7 @@ import lombok.Data;
 @Table(name = "Pacchetto")
 @Data
 public class PacchettoDao {
-
+/*questa classe possiede tutti i dati di un pacchetto inerente ad una determinata tappa*/
 	@Id
 	@Column(name = "Id")
 	private int id;
@@ -31,7 +31,7 @@ public class PacchettoDao {
 	private TappaDao tappaOBJ;
 
 	public PacchettoDto convertToDto() {
-		PacchettoDto dto = new PacchettoDto(id,titolo,tappa,tappaOBJ);
+		PacchettoDto dto = new PacchettoDto(id,titolo,tappa);
 		return dto;
 	}
 }

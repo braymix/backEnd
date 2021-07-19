@@ -26,7 +26,9 @@ import com.secondaProvaBackEnd.backend.services.implementation.ViaggioServicesIm
 @RestController
 @RequestMapping(value = "api/viaggi")
 public class ViaggiController {
+	/*questo controller mi serve per poter eseguire le chiamate rest*/
 
+	/*qui richiamo i vari services implementation dove ho fatto i metodi di cui ho bisogno*/
 	@Autowired
 	private ViaggioServicesImpl viaggioServicesImpl;
 	
@@ -36,6 +38,7 @@ public class ViaggiController {
 	@Autowired
 	private PacchettoServicesImpl pacchettoServicesImpl;
 
+	/*questo servizio ritorna tutti i viaggi ordinati per ordine di partenza*/
 	@GetMapping(path = "getAllViaggi")
 	public BaseResponseDto<List<ViaggioDto>> gettAllViaggi() {
 
@@ -53,7 +56,7 @@ public class ViaggiController {
 
 		return response;
 	}
-	
+	/*questo servizio mi ritorna tutte le tappe ed i relativi pacchetti di un determinato viaggio*/
 	@GetMapping(path = "detDettaglio/{idViaggio}")
 	public BaseResponseDto<List<RespDettaglioDto>> getDescrizione(@PathVariable int idViaggio) {
 
